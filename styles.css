@@ -1176,60 +1176,57 @@ footer .arriba{
     transform: translateY(0);
 }
 
-/* General: Aplica un diseño centrado */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
-    text-align: center; /* Asegura que el texto esté centrado */
-}
-
-/* Para los contenedores de las secciones */
+/* Contenedor general para todas las secciones */
 .contenido-seccion {
     display: flex;
-    flex-direction: column; /* Asegura que el contenido esté en una columna */
-    align-items: center; /* Centra el contenido en el eje horizontal */
-    justify-content: center; /* Centra el contenido en el eje vertical */
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Centra el texto */
     margin: 0 auto; /* Asegura que el contenedor esté centrado */
-    padding: 1rem; /* Añade espacio alrededor del contenido */
-    width: 90%; /* Ajusta el ancho para que sea responsivo */
-    max-width: 1200px; /* Limita el ancho máximo en dispositivos grandes */
+    padding: 1rem; /* Espacio interno */
+    width: 90%; /* Ajusta el ancho para dispositivos pequeños */
+    max-width: 1200px; /* Máximo ancho en pantallas grandes */
 }
 
-/* Para la galería */
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño responsivo de columnas */
-    gap: 1rem; /* Espacio entre los elementos */
-    width: 100%; /* Asegura que la galería ocupe el ancho disponible */
-    margin: 0 auto; /* Centra la galería */
+/* Para las cartas dentro de la sección */
+.cartas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cartas se ajusten en múltiples filas */
+    gap: 1rem; /* Espacio entre las cartas */
+    justify-content: center; /* Centra las cartas horizontalmente */
+    align-items: center; /* Centra las cartas verticalmente */
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
-/* Para los recuadros individuales */
-.proyecto {
+/* Estilo individual de cada carta */
+.carta {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra las imágenes y textos dentro */
+    align-items: center; /* Centra el contenido de cada carta */
     justify-content: center;
-    background-color: #1c1c1c; /* Fondo oscuro para seguir la estética */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade un sombreado */
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 1rem; /* Espaciado interno */
+    width: 250px; /* Ancho fijo */
+    max-width: 90%; /* Máximo ancho en dispositivos pequeños */
+    margin: 0 auto; /* Centra cada carta */
 }
 
-/* Ajustes específicos para dispositivos móviles */
+/* Media query para móviles */
 @media (max-width: 768px) {
     .contenido-seccion {
-        width: 95%; /* Reduce el ancho para móviles */
+        width: 95%; /* Reduce el ancho para pantallas pequeñas */
     }
 
-    .galeria {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Recuadros más pequeños en móviles */
-        gap: 0.5rem;
+    .cartas {
+        flex-direction: column; /* Cambia las cartas a una sola columna */
+        gap: 1rem; /* Ajusta el espacio entre ellas */
     }
 
-    .proyecto {
-        margin: 0 auto; /* Centra cada recuadro */
+    .carta {
+        width: 100%; /* Asegura que cada carta ocupe el ancho completo */
     }
 }
