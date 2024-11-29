@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Historia de Ella</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Amor ❤️</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>La Historia de Mi Amor</h2>
+            <p>
+                Aquí encontrarás cada detalle sobre su vida, cómo nos conocimos, y por qué cada día juntos es especial. 
+                Ella es única en todos los sentidos, y quiero compartir con el mundo lo maravillosa que es.
+            </p>
+            <div class="fila">
+                <div class="col">
+                    <h3>Primeros Momentos</h3>
+                    <p>Desde el día que la conocí, supe que mi vida cambiaría para siempre...</p>
+                </div>
+                <div class="col">
+                    <h3>Recuerdos Especiales</h3>
+                    <p>Hemos creado recuerdos inolvidables juntos que siempre guardaré en mi corazón...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Recuadro con Botón para Abrir el Modal -->
+<div class="video-recuadro">
+    <h3>Un video especial</h3>
+    <button class="btn-video" onclick="abrirModal()">Ver Video</button>
+</div>
+
+<!-- Modal para el Video -->
+<div id="modal-video" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <video controls>
+            <source src="video/milagro.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de este video.
+        </video>
+    </div>
+</div>
+<script>
+    // Función para abrir el modal
+    function abrirModal() {
+        const modal = document.getElementById('modal-video');
+        modal.style.display = 'block';
+    }
+
+    // Función para cerrar el modal
+    function cerrarModal() {
+        const modal = document.getElementById('modal-video');
+        modal.style.display = 'none';
+    }
+
+    // Cerrar el modal al hacer clic fuera del contenido
+    window.onclick = function(event) {
+        const modal = document.getElementById('modal-video');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+</script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute("href"));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+
+    <!-- Footer -->
+    <footer>
+        <a href="#historia" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

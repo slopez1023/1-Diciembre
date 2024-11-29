@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Promesas de Dios</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Mi Amor ❤️</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección de Promesas -->
+    <section id="promesas" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Promesas de Dios</h2>
+            
+            <!-- Promesa 1 -->
+            <div class="promesa animada">
+                <img src="images/plan_de_dios.jpg" alt="Plan de Dios">
+                <h3>“Porque yo sé los planes que tengo para ti”</h3>
+                <p>
+                    <strong>Jeremías 29:11</strong>: Porque yo sé los planes que tengo para vosotros, dice el Señor, planes de bienestar y no de mal, para daros un futuro y una esperanza.
+                </p>
+            </div>
+
+            <!-- Promesa 2 -->
+            <div class="promesa animada">
+                <img src="images/pastor.jpg" alt="El Señor es mi pastor">
+                <h3>“El Señor es mi pastor, nada me faltará”</h3>
+                <p>
+                    <strong>Salmos 23:1</strong>: El Señor es mi pastor, nada me faltará. En lugares de verdes pastos me hace descansar; junto a aguas de reposo me conduce.
+                </p>
+            </div>
+
+            <!-- Promesa 3 -->
+            <div class="promesa animada">
+                <img src="images/proteccion.jpg" alt="Protección de Dios">
+                <h3>“El Señor te guardará de todo mal”</h3>
+                <p>
+                    <strong>Salmos 121:7-8</strong>: El Señor te guardará de todo mal; él guardará tu alma. El Señor guardará tu salida y tu entrada desde ahora y para siempre.
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const promesas = document.querySelectorAll('.promesa');
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.2 });
+    
+            promesas.forEach(promesa => {
+                observer.observe(promesa);
+            });
+        });
+    </script>
+    
+    <!-- Footer -->
+    <footer>
+        <a href="index.html" class="arriba">
+            <i class="fa-solid fa-arrow-left"></i> Volver
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <title>Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Amor ❤️</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Ella</a></li>
+                    <li><a href="#cartas" onclick="seleccionar()">Cartas</a></li>
+                    <li><a href="#galeria" onclick="seleccionar()">Galería</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="images/MARIA.jpg" alt="Foto de María">
+            </div>            
+            <h1>Para Ti, Mi Amor</h1>
+            <h2>Un espacio lleno de amor y recuerdos especiales</h2>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE ELLA -->
+<section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Esta es mi historia</h2>
+        <p>
+            <span>Ella es lo mejor de mi vida.</span> Cada día me inspira con su sonrisa, su bondad y la luz que lleva consigo. 
+            Aquí quiero contar un poco de su historia, porque cada momento con ella merece ser recordado. Si deseas conocer más detalles, haz clic en el botón a continuación.
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="historia.html" class="btn-interactivo">
+                Conoce más
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCIÓN CARTAS -->
+<section id="cartas" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Cartas</h2>
+        <div class="fila">
+            <!-- Carta 1: Cualidades -->
+            <div class="carta-sellada cualidades" onclick="abrirCarta('cualidades.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-star"></i>
+                    <p>Cualidades</p>
+                </div>
+            </div>
+            <!-- Carta 2: Logros -->
+            <div class="carta-sellada logros" onclick="abrirCarta('logros.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-trophy"></i>
+                    <p>Logros</p>
+                </div>
+            </div>
+            <!-- Carta 3: Familia -->
+            <div class="carta-sellada familia" onclick="abrirCarta('familia.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-people-group"></i>
+                    <p>Familia</p>
+                </div>
+            </div>
+            <!-- Carta 4: Cartas de Familiares -->
+            <div class="carta-sellada cartas-familiares" onclick="abrirCarta('cartasFamilia.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>De su Familia</p>
+                </div>
+            </div>
+            <!-- Carta 5: Mi Carta -->
+            <div class="carta-sellada mi-carta" onclick="abrirCarta('carta.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Para Ella</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function abrirCarta(url) {
+        window.location.href = url;
+    }
+</script>
+
+<!-- SECCIÓN GALERÍA -->
+<section id="galeria" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="images/MARIA1.jpg" alt="Imagen 1">
+                <div class="overlay">
+                    <h3>Recuerdo 1</h3>
+                    <p>Este es un mensaje especial sobre el Recuerdo 1, lleno de momentos únicos.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="images/MARIA.jpg" alt="Imagen 2">
+                <div class="overlay">
+                    <h3>Recuerdo 2</h3>
+                    <p>Este mensaje habla de la importancia y belleza del Recuerdo 2.</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="images/MARIA.jpg" alt="Imagen 3">
+                <div class="overlay">
+                    <h3>Recuerdo 3</h3>
+                    <p>Un mensaje especial para describir lo que significa el Recuerdo 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+            <!-- Recuadro 1 -->
+            <div class="recuadro" onclick="abrirContenido('contenido1.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-cross"></i>
+                    <p>Contenido 1</p>
+                </div>
+            </div>
+            <!-- Recuadro 2 -->
+            <div class="recuadro" onclick="abrirContenido('contenido2.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-cross"></i>
+                    <p>Contenido 2</p>
+                </div>
+            </div>
+            <!-- Recuadro 3 -->
+            <div class="recuadro" onclick="abrirContenido('contenido3.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-cross"></i>
+                    <p>Contenido 3</p>
+                </div>
+            </div>
+            <!-- Recuadro 4 -->
+            <div class="recuadro" onclick="abrirContenido('contenido4.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-cross"></i>
+                    <p>Contenido 4</p>
+                </div>
+            </div>
+            <!-- Recuadro 5 -->
+            <div class="recuadro" onclick="abrirContenido('contenido5.html')">
+                <div class="tapa"></div>
+                <div class="contenido">
+                    <i class="fa-solid fa-cross"></i>
+                    <p>Contenido 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function abrirContenido(url) {
+        window.location.href = url;
+    }
+</script>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute("href"));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
