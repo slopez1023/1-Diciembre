@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
     <title>Mi Amor</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Agregar CSS de AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- MENÚ ENCABEZADO -->
@@ -62,10 +65,10 @@
 <!-- SECCIÓN CARTAS -->
 <section id="cartas" class="sobremi">
     <div class="contenido-seccion">
-        <h2>Cartas</h2>
+        <h2 data-aos="fade-down">Cartas</h2>
         <div class="fila">
             <!-- Carta 1: Cualidades -->
-            <div class="carta-sellada cualidades" onclick="abrirCarta('cualidades.html')">
+            <div class="carta-sellada cualidades" data-aos="fade-up" data-aos-delay="100" onclick="abrirCarta('cualidades.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-star"></i>
@@ -73,7 +76,7 @@
                 </div>
             </div>
             <!-- Carta 2: Logros -->
-            <div class="carta-sellada logros" onclick="abrirCarta('logros.html')">
+            <div class="carta-sellada logros" data-aos="fade-up" data-aos-delay="200" onclick="abrirCarta('logros.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-trophy"></i>
@@ -81,7 +84,7 @@
                 </div>
             </div>
             <!-- Carta 3: Familia -->
-            <div class="carta-sellada familia" onclick="abrirCarta('familia.html')">
+            <div class="carta-sellada familia" data-aos="fade-up" data-aos-delay="300" onclick="abrirCarta('familia.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-people-group"></i>
@@ -89,7 +92,7 @@
                 </div>
             </div>
             <!-- Carta 4: Cartas de Familiares -->
-            <div class="carta-sellada cartas-familiares" onclick="abrirCarta('cartasFamilia.html')">
+            <div class="carta-sellada cartas-familiares" data-aos="fade-up" data-aos-delay="400" onclick="abrirCarta('cartasFamilia.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-envelope"></i>
@@ -97,7 +100,7 @@
                 </div>
             </div>
             <!-- Carta 5: Mi Carta -->
-            <div class="carta-sellada mi-carta" onclick="abrirCarta('carta.html')">
+            <div class="carta-sellada mi-carta" data-aos="fade-up" data-aos-delay="500" onclick="abrirCarta('carta.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-heart"></i>
@@ -108,33 +111,26 @@
     </div>
 </section>
 
-
-<script>
-    function abrirCarta(url) {
-        window.location.href = url;
-    }
-</script>
-
 <!-- SECCIÓN GALERÍA -->
 <section id="galeria" class="portfolio">
     <div class="contenido-seccion">
-        <h2>Galería</h2>
+        <h2 data-aos="fade-down">Galería</h2>
         <div class="galeria">
-            <div class="proyecto">
+            <div class="proyecto" data-aos="zoom-in" data-aos-delay="100">
                 <img src="images/MARIA1.jpg" alt="Imagen 1">
                 <div class="overlay">
                     <h3>Recuerdo 1</h3>
                     <p>Este es un mensaje especial sobre el Recuerdo 1, lleno de momentos únicos.</p>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyecto" data-aos="zoom-in" data-aos-delay="200">
                 <img src="images/MARIA.jpg" alt="Imagen 2">
                 <div class="overlay">
                     <h3>Recuerdo 2</h3>
                     <p>Este mensaje habla de la importancia y belleza del Recuerdo 2.</p>
                 </div>
             </div>
-            <div class="proyecto">
+            <div class="proyecto" data-aos="zoom-in" data-aos-delay="300">
                 <img src="images/MARIA.jpg" alt="Imagen 3">
                 <div class="overlay">
                     <h3>Recuerdo 3</h3>
@@ -145,14 +141,13 @@
     </div>
 </section>
 
-
 <!-- SECCIÓN CONTACTO -->
 <section id="contacto" class="contacto">
     <div class="contenido-seccion">
-        <h2>Contacto</h2>
+        <h2 data-aos="fade-down">Contacto</h2>
         <div class="fila">
             <!-- Recuadro 1 -->
-            <div class="recuadro" onclick="abrirContenido('contenido1.html')">
+            <div class="recuadro" data-aos="flip-left" data-aos-delay="100" onclick="abrirContenido('contenido1.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
@@ -160,7 +155,7 @@
                 </div>
             </div>
             <!-- Recuadro 2 -->
-            <div class="recuadro" onclick="abrirContenido('contenido2.html')">
+            <div class="recuadro" data-aos="flip-left" data-aos-delay="200" onclick="abrirContenido('contenido2.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
@@ -168,7 +163,7 @@
                 </div>
             </div>
             <!-- Recuadro 3 -->
-            <div class="recuadro" onclick="abrirContenido('contenido3.html')">
+            <div class="recuadro" data-aos="flip-left" data-aos-delay="300" onclick="abrirContenido('contenido3.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
@@ -176,7 +171,7 @@
                 </div>
             </div>
             <!-- Recuadro 4 -->
-            <div class="recuadro" onclick="abrirContenido('contenido4.html')">
+            <div class="recuadro" data-aos="flip-left" data-aos-delay="400" onclick="abrirContenido('contenido4.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
@@ -184,7 +179,7 @@
                 </div>
             </div>
             <!-- Recuadro 5 -->
-            <div class="recuadro" onclick="abrirContenido('contenido5.html')">
+            <div class="recuadro" data-aos="flip-left" data-aos-delay="500" onclick="abrirContenido('contenido5.html')">
                 <div class="tapa"></div>
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
@@ -194,6 +189,7 @@
         </div>
     </div>
 </section>
+
 <script>
     function abrirContenido(url) {
         window.location.href = url;
@@ -231,6 +227,16 @@
             });
         });
     </script>
+    <!-- Agregar JS de AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // Inicializar AOS
+  AOS.init({
+    duration: 1000, // Duración de las animaciones en ms
+    once: true // Animar solo la primera vez que se vean
+  });
+</script>
+
     
 </body>
 </html>

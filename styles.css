@@ -1230,3 +1230,39 @@ footer .arriba{
         width: 100%; /* Asegura que cada carta ocupe el ancho completo */
     }
 }
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .carta {
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0; /* Inicia invisible */
+    }
+  
+    /* Añade un retraso para animar uno por uno */
+    .carta:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    .carta:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .carta:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+  }
+  
+  /* Animación Keyframes */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Aparece desde abajo */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Entra a su posición original */
+    }
+  }
+  @media (hover: none) {
+    .carta:hover {
+      transform: none; /* Elimina el efecto de hover */
+    }
+  }
+  
