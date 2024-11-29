@@ -236,7 +236,91 @@
     once: true // Animar solo la primera vez que se vean
   });
 </script>
-
+<style>
+    /* Ajustes generales para recuadros */
+    .carta-sellada, .recuadro {
+        width: 200px; /* Tamaño estándar en escritorio */
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px; /* Espaciado entre recuadros */
+    }
+    
+    /* Texto e íconos dentro de los recuadros */
+    .carta-sellada .contenido i, .recuadro .contenido i {
+        font-size: 3rem; /* Tamaño del ícono */
+        margin-bottom: 10px;
+    }
+    
+    .carta-sellada .contenido p, .recuadro .contenido p {
+        font-size: 1rem; /* Tamaño del texto */
+    }
+    
+    /* Ajustes para dispositivos móviles */
+    @media (max-width: 768px) {
+        /* Reducción de tamaño de los recuadros */
+        .carta-sellada, .recuadro {
+            width: 150px; /* Más pequeños en móviles */
+            height: 150px;
+            margin: 15px auto; /* Espaciado vertical centrado */
+        }
+    
+        /* Texto e íconos más grandes en móviles */
+        .carta-sellada .contenido i, .recuadro .contenido i {
+            font-size: 2.5rem; /* Íconos ligeramente más pequeños */
+        }
+    
+        .carta-sellada .contenido p, .recuadro .contenido p {
+            font-size: 0.9rem; /* Texto ajustado */
+        }
+    
+        /* Espaciado entre secciones */
+        section {
+            padding: 20px 10px; /* Más compacto */
+        }
+    }
+    
+    /* Ajustes para pantallas muy pequeñas */
+    @media (max-width: 480px) {
+        .carta-sellada, .recuadro {
+            width: 120px; /* Aún más pequeños en pantallas muy pequeñas */
+            height: 120px;
+        }
+    
+        .carta-sellada .contenido i, .recuadro .contenido i {
+            font-size: 2rem; /* Tamaño reducido */
+        }
+    
+        .carta-sellada .contenido p, .recuadro .contenido p {
+            font-size: 0.8rem; /* Texto más compacto */
+        }
+    }
+    </style>
+<script>
+    // Detect Scroll and Add Class for Animation
+    function handleScrollAnimation() {
+        const elementsToAnimate = document.querySelectorAll(
+            ".carta-sellada, .recuadro, .proyecto"
+        );
+        const triggerPoint = window.innerHeight * 0.8; // Trigger when element is 80% into view
+    
+        elementsToAnimate.forEach((el) => {
+            const elementTop = el.getBoundingClientRect().top;
+    
+            if (elementTop < triggerPoint) {
+                el.classList.add("show"); // Add show class when element is in view
+            }
+        });
+    }
+    
+    // Attach Scroll Event Listener
+    window.addEventListener("scroll", handleScrollAnimation);
+    
+    // Trigger animation on page load
+    window.addEventListener("load", handleScrollAnimation);
+    </script>    
     
 </body>
 </html>
