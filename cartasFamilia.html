@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <title>Cartas de Familia</title>
+    <style>
+        /* General */
+        body {
+            font-family: 'Work Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e2326; /* Fondo claro */
+            color: #968484;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Righteous', sans-serif;
+            margin-top: 20px;
+        }
+
+        /* Sección de cartas */
+        #cartas-familia {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap; /* Permite múltiples filas */
+            justify-content: center; /* Centra las cartas */
+            gap: 20px; /* Espacio entre cartas */
+        }
+
+        /* Recuadro de carta */
+        .carta {
+            background-color: #252A2E; /* Fondo oscuro */
+            color: #fff; /* Texto blanco */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+            overflow: hidden; /* Asegura que nada sobresalga */
+            width: 300px; /* Tamaño fijo de las cartas */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Imagen dentro de la carta */
+        .carta img {
+            width: 100%; /* Ocupa el ancho del recuadro */
+            height: 200px; /* Altura fija */
+            object-fit: cover; /* Mantiene proporciones */
+            border-bottom: 5px solid #968484; /* Separador decorativo */
+        }
+
+        /* Contenido dentro de la carta */
+        .carta h3 {
+            font-family: 'Righteous', sans-serif;
+            margin: 15px 0 10px;
+            font-size: 22px;
+            color: #968484; /* Color de contraste */
+        }
+
+        .carta p {
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 0 10px 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #252A2E;
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        footer a.arriba {
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #968484;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        footer a.arriba:hover {
+            background-color: #fff;
+            color: #252A2E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1 style="text-align: center; font-family: 'Righteous', sans-serif;">Mi Amor ❤️</h1>
+        </div>
+    </header>
+
+    <!-- Sección de Cartas -->
+    <section id="cartas-familia">
+        <!-- Carta del Papá -->
+        <div class="carta">
+            <img src="images/PAPA.jpg" alt="Carta del Papá">
+            <h3>PAPÁ</h3>
+            <p>
+                Princesita hermosa, me siento muy orgulloso de tus logros, de tu relación con Dios y también porque eres una niña muy hermosa, honesta, íntegra y ante todo obediente.
+                Le doy gracias a Dios por haberme permitido disfrutarte cada día más. Sabes que te amo y eres muy valiosa para mí.
+                Que Dios te bendiga y conceda todos los anhelos de tu corazón conforme a todas las riquezas que tenemos en Cristo Jesús.
+            </p>
+        </div>
+
+        <!-- Carta de la Mamá -->
+        <div class="carta">
+            <img src="images/MAMA.jpg" alt="Carta de la Mamá">
+            <h3>MAMÁ</h3>
+            <p>
+                Hoy es un día para reflexionar sobre la vida y sobre lo que realmente importa.
+                Estoy tan orgullosa de la persona que eres hoy, de la mujer admirable en la que te has convertido.
+                La vida nos dio un susto, pero también nos dio una segunda oportunidad para apreciar cada momento que pasamos junto a ti.
+                Estoy tan agradecida con Dios por tu vida y por tenerte con nosotros.
+            </p>
+            <p>Te amo mucho mi hija hermosa! 💐</p>
+            <p>Con amor, tu mami.</p>
+        </div>
+
+        <!-- Carta de Linda -->
+        <div class="carta">
+            <img src="images/LINDA.jpg" alt="Carta de Linda">
+            <h3>LINDA</h3>
+            <p>
+                Maria... Ud es una persona muy especial para mí, me siento muy agradecida de poder haber compartido estos 17 años con alguien tan increíble.
+                Gracias por preocuparse por Ana y por mí, gracias por estar ahí cuando nos sentimos mal.
+                Eso demuestra lo fuerte y lo incondicional que es para nosotras.
+            </p>
+            <p>ATT: Linda</p>
+        </div>
+
+        <!-- Carta de Ana -->
+        <div class="carta">
+            <img src="images/ANA.jpg" alt="Carta de Ana">
+            <h3>ANA</h3>
+            <p>
+                Maria te quiero mucho, por eso quiero que sepas que aunque no te lo diga, tú eres un ejemplo a seguir para mí.
+                Tienes un corazón muy lindo lleno de mucha amabilidad, amor, gratitud y generosidad.
+                Gracias por tu apoyo en cada momento bueno o malo, por tus oraciones, y por escucharme.
+            </p>
+        </div>
+
+        <!-- Carta de las Tatas -->
+        <div class="carta">
+            <img src="images/TATAS.jpg" alt="Carta de las Tatas">
+            <h3>TATAS</h3>
+            <p>
+                Princesita hoy doy gracias al SEÑOR porque hace doce años Él te devolvió la vida.
+                Eres una personita única llena de valores increíbles. Dios los llene de mucho amor, respeto y sabiduría.
+                Eso es lo que te mereces, mi princesa adorada. Te amamos mucho. Tus Tatas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html" class="arriba">
+            <i class="fa-solid fa-arrow-left"></i> Volver
+        </a>
+    </footer>
+</body>
+</html>
+

@@ -31,7 +31,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #1CB698;
+    color: #F5EFE6;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -47,11 +47,11 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+    color: #F5EFE6;
 }
 .nav-responsive{
-    background-color: #1CB698;
-    color:#fff;
+    background-color: #F5EFE6;
+    color:#968484;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -64,7 +64,7 @@ html{
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: #fff;
+    color: #F5EFE6;
     display: flex;
     align-items: center;
 }
@@ -79,7 +79,7 @@ html{
 }
 .inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #1CB698;
+    border: 10px solid #1e2326;
     display: block;
     width: 80%;
     margin: auto;
@@ -111,11 +111,11 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #1CB698;
+    background-color: #F5EFE6;
 }
 .sobremi{
     background-color: #1e2326;
-    color: #fff;
+    color: #F5EFE6;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
@@ -135,7 +135,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #1CB698;
+    color: #968484;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -365,115 +365,9 @@ html{
     0%{width: 0%;}
     100%{width: 94%;}
 }
-/* SECCION CURRICULUM */
-.curriculum{
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 20px;
-}
-.curriculum .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.curriculum h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-
-}
-.curriculum .fila{
-    display: flex;
-    justify-content: space-between;
-}
-.curriculum .fila .col{
-    width: 49%;
-    padding: 0 20px;
-}
-.curriculum .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
-}
-.curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
-}
-.curriculum .fila .item{
-    padding: 25px;
-    margin-bottom: 30px;
-    background-color: #252A2E;
-    position: relative;
-}
-.curriculum .fila .item h4{
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.curriculum .fila .item .casa{
-    color: #1CB698;
-    font-size: 22px;
-    font-weight: bold;
-    display: block;
-}
-.curriculum .fila .item .fecha{
-    display: block;
-    color: #1CB698;
-    margin-bottom: 10px;
-}
-.curriculum .fila .item p{
-    line-height: 24px;
-}
-.curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
-    margin-right: 20px;
-}
-.curriculum .fila .der{
-    border-left: 2px solid #1CB698;
-    margin-left: 20px;
-}
-.curriculum .fila .item .conectori{
-    height: 2px;
-    background-color: #1CB698;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    right: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectori .circuloi{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #1CB698;
-    float: right;
-    position: relative;
-    bottom: 4px;
-}
-.curriculum .fila .item .conectord{
-    height: 2px;
-    background-color: #1CB698;
-    width: 47px;
-    position: absolute;
-    top: 50%;
-    left: -47px;
-    z-index: 5;
-}
-.curriculum .fila .item .conectord .circulod{
-    display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #1CB698;
-    float: left;
-    position: relative;
-    bottom: 4px;
-}
 /* Estilo para la sección Galería */
 #galeria {
-    background-color: transparent; /* Fondo transparente para mantener el estilo */
+    background-color: #1e2326; /* Fondo oscuro */
     padding: 50px 20px;
     text-align: center;
     color: #fff;
@@ -483,15 +377,9 @@ html{
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #00e6e6; /* Un color acorde a la estética */
+    color: #F5EFE6; /* Estilo del título */
 }
 
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Separación entre las imágenes */
-}
 
 .proyecto {
     position: relative;
@@ -537,7 +425,7 @@ html{
 .overlay h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #00e6e6;
+    color: #F5EFE6;
 }
 
 .overlay p {
@@ -550,7 +438,7 @@ html{
 .contacto{
     background-image: url(img/contact_bg.png);
     background-color: #1e2326;
-    color: #fff;
+    color: #F5EFE6;
     padding: 50px 0;
 }
 .contacto .contenido-seccion{
@@ -594,19 +482,7 @@ html{
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #1CB698;
-    z-index: -1;
-    transition: 1s;
-}
-.contacto button:hover .overlay{
-    width: 100%;
-}
+
 .contacto .col img{
     width: 100%;
 }
@@ -626,7 +502,7 @@ html{
     margin-bottom: 20px;
 }
 .contacto .col .info ul li i{
-    color: #1CB698;
+    color: #dae6e3;
     display: inline-block;
     margin-right: 20px;
 }
@@ -655,11 +531,10 @@ footer .redes a{
     transition: .3s;
 }
 footer .arriba{
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: #1CB698;
-    color: #fff;
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #F5EFE6;
+    color: #968484;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -743,8 +618,8 @@ footer .arriba{
     padding: 10px 20px;
     font-size: 18px;
     font-family: 'Righteous', sans-serif;
-    color: #fff;
-    background-color: #1CB698;
+    color: #968484;
+    background-color: #F5EFE6;
     text-decoration: none;
     border-radius: 30px;
     position: relative;
@@ -771,7 +646,7 @@ footer .arriba{
 }
 
 .btn-interactivo:hover {
-    background-color: #17a582;
+    background-color: #d4be9c;
     transform: scale(1.05);
 }
 /* Animación para el título */
@@ -808,7 +683,7 @@ footer .arriba{
 .video-recuadro h3 {
     margin-bottom: 20px;
     font-family: 'Righteous';
-    color: #1CB698;
+    color: #F5EFE6;
     font-size: 24px;
 }
 
@@ -816,7 +691,7 @@ footer .arriba{
 .video-recuadro video {
     width: 100%;
     border-radius: 10px;
-    border: 2px solid #1CB698;
+    border: 2px solid #F5EFE6;
 }
 
 /* Animación de aparición */
@@ -859,7 +734,7 @@ footer .arriba{
 .modal-contenido video {
     width: 100%;
     border-radius: 10px;
-    border: 2px solid #1CB698;
+    border: 2px solid #F5EFE6;
 }
 
 /* Botón de cerrar */
@@ -875,12 +750,12 @@ footer .arriba{
 }
 
 .cerrar:hover {
-    color: #1CB698;
+    color: #F5EFE6;
 }
 
 /* Botón en el recuadro */
 .btn-video {
-    background-color: #1CB698;
+    background-color: #d4be9c;
     color: white;
     font-family: 'Righteous';
     font-size: 18px;
@@ -892,7 +767,7 @@ footer .arriba{
 }
 
 .btn-video:hover {
-    background-color: #17a582;
+    background-color: #F5EFE6;
     transform: scale(1.05);
 }
 /* Contenedor de las cartas */
@@ -904,151 +779,12 @@ footer .arriba{
     margin-top: 40px;
 }
 
-/* Cartas generales */
-.carta-sellada {
-    width: 200px;
-    height: 150px;
-    position: relative;
-    perspective: 1000px;
-    cursor: pointer;
-}
-
-.carta-sellada .tapa {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #252A2E;
-    border-radius: 10px;
-    transform-origin: top;
-    transform: rotateX(0deg);
-    transition: transform 0.5s ease;
-}
-
-.carta-sellada .contenido {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #1CB698;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transform: rotateX(-90deg);
-    backface-visibility: hidden;
-    transition: transform 0.5s ease;
-}
-
-.carta-sellada .contenido i {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.carta-sellada .contenido p {
-    margin: 0;
-    font-size: 16px;
-    text-align: center;
-}
-
-/* Animación al pasar el cursor */
-.carta-sellada:hover .tapa {
-    transform: rotateX(-90deg);
-}
-
-.carta-sellada:hover .contenido {
-    transform: rotateX(0deg);
-}
-
-/* Estilos únicos por tipo de carta */
-.carta-sellada.cualidades .contenido {
-    background-color: #FFD700; /* Oro */
-}
-
-.carta-sellada.logros .contenido {
-    background-color: #FF4500; /* Naranja */
-}
-
-.carta-sellada.familia .contenido {
-    background-color: #32CD32; /* Verde */
-}
-
-.carta-sellada.cartas-familiares .contenido {
-    background-color: #1E90FF; /* Azul */
-}
-
-.carta-sellada.mi-carta .contenido {
-    background-color: #FF69B4; /* Rosa */
-}
 
 /* Adaptación a pantallas pequeñas */
 @media (max-width: 700px) {
     .carta-sellada {
         width: 150px;
         height: 120px;
-    }
-}
-/* Estilo base para las cartas */
-.carta-sellada {
-    width: 200px;
-    height: 150px;
-    position: relative;
-    perspective: 1000px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-/* Añadimos una sombra suave por defecto */
-.carta-sellada .contenido {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #1CB698;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    transform: rotateX(-90deg);
-    backface-visibility: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease, box-shadow 0.3s ease;
-}
-
-/* Efecto de tapa al pasar el cursor */
-.carta-sellada:hover .tapa {
-    transform: rotateX(-90deg);
-}
-
-/* Activar el contenido de la carta al pasar el cursor */
-.carta-sellada:hover .contenido {
-    transform: rotateX(0deg);
-    box-shadow: 0 8px 16px rgba(28, 182, 152, 0.4), 0 0 15px rgba(28, 182, 152, 0.6);
-}
-
-/* Efecto de brillo animado */
-.carta-sellada:hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), transparent);
-    border-radius: 10px;
-    animation: shimmer 1.5s infinite;
-    z-index: 1; /* Aseguramos que el brillo esté encima */
-    pointer-events: none;
-}
-
-/* Animación de brillo */
-@keyframes shimmer {
-    from {
-        transform: translateX(-150%);
-    }
-    to {
-        transform: translateX(150%);
     }
 }
 
@@ -1070,33 +806,21 @@ footer .arriba{
     cursor: pointer;
 }
 
-/* Tapa del recuadro */
-.recuadro .tapa {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #252A2E;
-    border-radius: 10px;
-    transform-origin: top; /* Eje de rotación */
-    transform: rotateX(0deg); /* Inicialmente cerrada */
-    transition: transform 0.5s ease;
-}
 
 /* Contenido del recuadro */
 .recuadro .contenido {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #F5EFE6;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #F5EFE6;
     font-family: 'Work Sans', sans-serif;
-    transform: rotateX(-90deg); /* Oculta contenido inicial */
-    backface-visibility: hidden; /* Oculta la cara trasera */
+
 }
 
 /* Ícono de la cruz */
@@ -1110,14 +834,6 @@ footer .arriba{
     font-size: 14px;
 }
 
-/* Animación de apertura al pasar el cursor */
-.recuadro:hover .tapa {
-    transform: rotateX(-90deg);
-}
-
-.recuadro:hover .contenido {
-    transform: rotateX(0deg);
-}
 
 /* Adaptación a pantallas pequeñas */
 @media (max-width: 700px) {
@@ -1153,7 +869,7 @@ footer .arriba{
     font-family: 'Righteous', sans-serif;
     font-size: 24px;
     margin-bottom: 10px;
-    color: #1CB698;
+    color: #968484;
 }
 
 /* Cuerpo de la promesa */
@@ -1205,7 +921,6 @@ footer .arriba{
     flex-direction: column;
     align-items: center; /* Centra el contenido de cada carta */
     justify-content: center;
-    background-color: #1c1c1c; /* Fondo oscuro */
     color: #fff; /* Texto claro */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
@@ -1265,4 +980,25 @@ footer .arriba{
       transform: none; /* Elimina el efecto de hover */
     }
   }
-  
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sobremi {
+    flex: 1; /* Permite que esta sección crezca para ocupar el espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el contenido */
+    background-color: #252A2E; /* Fondo oscuro, para que el diseño sea consistente */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+}
+
+.contenido-seccion {
+    max-width: 800px;
+    padding: 20px;
+}
+

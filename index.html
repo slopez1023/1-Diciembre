@@ -40,7 +40,7 @@
             <div class="contenedor-img">
                 <img src="images/MARIA.jpg" alt="Foto de María">
             </div>            
-            <h1>Para Ti, Mi Amor</h1>
+            <h1>Para Ti Amor</h1>
             <h2>Un espacio lleno de amor y recuerdos especiales</h2>
         </div>
     </section>
@@ -48,9 +48,9 @@
     <!-- SECCIÓN SOBRE ELLA -->
 <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
-        <h2>Esta es mi historia</h2>
+        <h2>La historia de un milagro vivo</h2>
         <p>
-            <span>Ella es lo mejor de mi vida.</span> Cada día me inspira con su sonrisa, su bondad y la luz que lleva consigo. 
+            <span>Esta es la historia de una mujer bendecida por el Señor.</span> Cada día logra impactar más en este mundo con humildad, su bondad y la luz que lleva consigo. 
             Aquí quiero contar un poco de su historia, porque cada momento con ella merece ser recordado. Si deseas conocer más detalles, haz clic en el botón a continuación.
         </p>
         <div style="text-align: center; margin-top: 20px;">
@@ -65,46 +65,56 @@
 <!-- SECCIÓN CARTAS -->
 <section id="cartas" class="sobremi">
     <div class="contenido-seccion">
-        <h2 data-aos="fade-down">Cartas</h2>
+        <h2>Cartas</h2>
         <div class="fila">
             <!-- Carta 1: Cualidades -->
-            <div class="carta-sellada cualidades" data-aos="fade-up" data-aos-delay="100" onclick="abrirCarta('cualidades.html')">
-                <div class="tapa"></div>
+            <div class="carta-sellada cualidades" onclick="abrirCarta('cualidades.html')">
                 <div class="contenido">
                     <i class="fa-solid fa-star"></i>
                     <p>Cualidades</p>
                 </div>
             </div>
-            <!-- Carta 2: Logros -->
-            <div class="carta-sellada logros" data-aos="fade-up" data-aos-delay="200" onclick="abrirCarta('logros.html')">
-                <div class="tapa"></div>
-                <div class="contenido">
-                    <i class="fa-solid fa-trophy"></i>
-                    <p>Logros</p>
-                </div>
-            </div>
-            <!-- Carta 3: Familia -->
-            <div class="carta-sellada familia" data-aos="fade-up" data-aos-delay="300" onclick="abrirCarta('familia.html')">
-                <div class="tapa"></div>
-                <div class="contenido">
-                    <i class="fa-solid fa-people-group"></i>
-                    <p>Familia</p>
-                </div>
-            </div>
-            <!-- Carta 4: Cartas de Familiares -->
-            <div class="carta-sellada cartas-familiares" data-aos="fade-up" data-aos-delay="400" onclick="abrirCarta('cartasFamilia.html')">
-                <div class="tapa"></div>
+            <!-- Carta 2: Cartas de Familiares -->
+            <div class="carta-sellada cartas-familiares" onclick="abrirCarta('cartasFamilia.html')">
                 <div class="contenido">
                     <i class="fa-solid fa-envelope"></i>
                     <p>De su Familia</p>
                 </div>
             </div>
-            <!-- Carta 5: Mi Carta -->
-            <div class="carta-sellada mi-carta" data-aos="fade-up" data-aos-delay="500" onclick="abrirCarta('carta.html')">
-                <div class="tapa"></div>
+            <!-- Carta 3: Mi Carta -->
+            <div class="carta-sellada mi-carta" onclick="abrirCarta('carta.html')">
                 <div class="contenido">
                     <i class="fa-solid fa-heart"></i>
                     <p>Para Ella</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECCIÓN GALERÍA -->
+<section id="galeria" class="portfolio">
+    <div class="contenido-seccion">
+        <h2 data-aos="fade-down">Galería</h2>
+        <div class="galeria">
+            <div class="proyecto" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/MARIA1.jpg" alt="Imagen 1">
+                <div class="overlay">
+                    <h3>Recuerdo 1</h3>
+                    <p>Este es un mensaje especial sobre el Recuerdo 1, lleno de momentos únicos.</p>
+                </div>
+            </div>
+            <div class="proyecto" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/MARIA.jpg" alt="Imagen 2">
+                <div class="overlay">
+                    <h3>Recuerdo 2</h3>
+                    <p>Este mensaje habla de la importancia y belleza del Recuerdo 2.</p>
+                </div>
+            </div>
+            <div class="proyecto" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/danza.jpg" alt="Imagen 3">
+                <div class="overlay">
+                    <h3>Recuerdo 3</h3>
+                    <p>Un mensaje especial para describir lo que significa el Recuerdo 3.</p>
                 </div>
             </div>
         </div>
@@ -131,7 +141,7 @@
                 </div>
             </div>
             <div class="proyecto" data-aos="zoom-in" data-aos-delay="300">
-                <img src="images/MARIA.jpg" alt="Imagen 3">
+                <img src="images/danza.jpg" alt="Imagen 3">
                 <div class="overlay">
                     <h3>Recuerdo 3</h3>
                     <p>Un mensaje especial para describir lo que significa el Recuerdo 3.</p>
@@ -141,49 +151,119 @@
     </div>
 </section>
 
+<style>
+    /* SECCIÓN GALERÍA */
+    #galeria {
+        background-color: #1e2326; /* Fondo oscuro */
+        padding: 40px 20px;
+    }
+
+    #galeria h2 {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        font-family: 'Righteous', sans-serif;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap; /* Permite varias filas */
+        gap: 20px; /* Espaciado entre las imágenes */
+        justify-content: center; /* Centra las imágenes */
+    }
+
+    .proyecto {
+        position: relative;
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 400px; /* Tamaño máximo del recuadro */
+        aspect-ratio: 16 / 10; /* Proporción del recuadro (horizontal) */
+        border-radius: 10px;
+        overflow: hidden; /* Para que las imágenes no se salgan del contenedor */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .proyecto img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Escala las imágenes sin recortarlas */
+        background-color: #000; /* Fondo negro para imágenes más pequeñas */
+        transition: transform 0.3s ease;
+    }
+
+    .proyecto:hover img {
+        transform: scale(1.05); /* Zoom leve al pasar el mouse */
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .proyecto:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay h3 {
+        margin-bottom: 10px;
+        font-family: 'Righteous', sans-serif;
+    }
+
+    .overlay p {
+        font-size: 14px;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    /* Diseño responsivo para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .proyecto {
+            max-width: 100%; /* Las imágenes ocupan el ancho completo */
+            aspect-ratio: 4 / 3; /* Cambia la proporción para móviles */
+        }
+
+        .galeria {
+            gap: 15px; /* Reduce el espaciado entre las imágenes */
+        }
+    }
+</style>
+
+
+
 <!-- SECCIÓN CONTACTO -->
 <section id="contacto" class="contacto">
     <div class="contenido-seccion">
-        <h2 data-aos="fade-down">Contacto</h2>
+        <h2>Contacto</h2>
         <div class="fila">
             <!-- Recuadro 1 -->
-            <div class="recuadro" data-aos="flip-left" data-aos-delay="100" onclick="abrirContenido('contenido1.html')">
-                <div class="tapa"></div>
+            <div class="recuadro" onclick="abrirContenido('contenido1.html')">
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
-                    <p>Contenido 1</p>
+                    <p>Promesas de Dios</p>
                 </div>
             </div>
             <!-- Recuadro 2 -->
-            <div class="recuadro" data-aos="flip-left" data-aos-delay="200" onclick="abrirContenido('contenido2.html')">
-                <div class="tapa"></div>
+            <div class="recuadro" onclick="abrirContenido('contenido2.html')">
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
                     <p>Contenido 2</p>
                 </div>
             </div>
             <!-- Recuadro 3 -->
-            <div class="recuadro" data-aos="flip-left" data-aos-delay="300" onclick="abrirContenido('contenido3.html')">
-                <div class="tapa"></div>
+            <div class="recuadro" onclick="abrirContenido('contenido3.html')">
                 <div class="contenido">
                     <i class="fa-solid fa-cross"></i>
                     <p>Contenido 3</p>
-                </div>
-            </div>
-            <!-- Recuadro 4 -->
-            <div class="recuadro" data-aos="flip-left" data-aos-delay="400" onclick="abrirContenido('contenido4.html')">
-                <div class="tapa"></div>
-                <div class="contenido">
-                    <i class="fa-solid fa-cross"></i>
-                    <p>Contenido 4</p>
-                </div>
-            </div>
-            <!-- Recuadro 5 -->
-            <div class="recuadro" data-aos="flip-left" data-aos-delay="500" onclick="abrirContenido('contenido5.html')">
-                <div class="tapa"></div>
-                <div class="contenido">
-                    <i class="fa-solid fa-cross"></i>
-                    <p>Contenido 5</p>
                 </div>
             </div>
         </div>
@@ -236,85 +316,101 @@
     once: true // Animar solo la primera vez que se vean
   });
 </script>
+
 <style>
-    /* Ajustes generales para recuadros */
+    /* Estilo básico para cartas y recuadros */
     .carta-sellada, .recuadro {
-        width: 200px; /* Tamaño estándar en escritorio */
+        width: 200px;
         height: 200px;
         display: flex;
+        flex-direction: column; /* Para que el ícono y el texto se apilen verticalmente */
         align-items: center;
         justify-content: center;
         text-align: center;
-        margin: 10px; /* Espaciado entre recuadros */
+        background-color: #F5EFE6; /* Fondo claro */
+        border: 2px solid #ddd; /* Bordes sutiles */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        margin: 15px;
+        cursor: pointer; /* Cursor de mano al hacer clic */
+        transition: none; /* Sin animaciones */
     }
     
-    /* Texto e íconos dentro de los recuadros */
+    /* Íconos dentro de las cartas y recuadros */
     .carta-sellada .contenido i, .recuadro .contenido i {
-        font-size: 3rem; /* Tamaño del ícono */
+        font-size: 3rem;
+        color: #968484;
         margin-bottom: 10px;
     }
     
+    /* Texto dentro de las cartas y recuadros */
     .carta-sellada .contenido p, .recuadro .contenido p {
-        font-size: 1rem; /* Tamaño del texto */
+        font-size: 1rem;
+        color: #968484;
+        margin: 0;
     }
     
-    /* Ajustes para dispositivos móviles */
+    /* Responsividad: Ajustes para pantallas pequeñas */
     @media (max-width: 768px) {
-        /* Reducción de tamaño de los recuadros */
         .carta-sellada, .recuadro {
-            width: 150px; /* Más pequeños en móviles */
+            width: 150px;
             height: 150px;
-            margin: 15px auto; /* Espaciado vertical centrado */
+            margin: 10px auto;
         }
     
-        /* Texto e íconos más grandes en móviles */
         .carta-sellada .contenido i, .recuadro .contenido i {
-            font-size: 2.5rem; /* Íconos ligeramente más pequeños */
+            font-size: 2.5rem;
         }
     
         .carta-sellada .contenido p, .recuadro .contenido p {
-            font-size: 0.9rem; /* Texto ajustado */
-        }
-    
-        /* Espaciado entre secciones */
-        section {
-            padding: 20px 10px; /* Más compacto */
+            font-size: 0.9rem;
         }
     }
     
-    /* Ajustes para pantallas muy pequeñas */
     @media (max-width: 480px) {
         .carta-sellada, .recuadro {
-            width: 120px; /* Aún más pequeños en pantallas muy pequeñas */
+            width: 120px;
             height: 120px;
         }
     
         .carta-sellada .contenido i, .recuadro .contenido i {
-            font-size: 2rem; /* Tamaño reducido */
+            font-size: 2rem;
         }
     
         .carta-sellada .contenido p, .recuadro .contenido p {
-            font-size: 0.8rem; /* Texto más compacto */
+            font-size: 0.8rem;
+        }
+    }
+    
+    /* Ajustes para pantallas grandes */
+    @media (min-width: 1024px) {
+        .carta-sellada, .recuadro {
+            width: 220px;
+            height: 220px;
+        }
+    
+        .carta-sellada .contenido i, .recuadro .contenido i {
+            font-size: 3.5rem;
+        }
+    
+        .carta-sellada .contenido p, .recuadro .contenido p {
+            font-size: 1.1rem;
         }
     }
     </style>
-<script>
-    // Detect Scroll and Add Class for Animation
-    function handleScrollAnimation() {
-        const elementsToAnimate = document.querySelectorAll(
-            ".carta-sellada, .recuadro, .proyecto"
-        );
-        const triggerPoint = window.innerHeight * 0.8; // Trigger when element is 80% into view
     
-        elementsToAnimate.forEach((el) => {
-            const elementTop = el.getBoundingClientRect().top;
+    <script>
+        // Función para abrir enlaces al hacer clic
+        function abrirCarta(url) {
+            window.location.href = url;
+        }
     
-            if (elementTop < triggerPoint) {
-                el.classList.add("show"); // Add show class when element is in view
-            }
-        });
-    }
+        function abrirContenido(url) {
+            window.location.href = url;
+        }
+    </script>
     
+    
+    <script>
     // Attach Scroll Event Listener
     window.addEventListener("scroll", handleScrollAnimation);
     
