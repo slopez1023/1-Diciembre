@@ -990,6 +990,7 @@ footer .arriba{
 .sobremi {
     flex: 1; /* Permite que esta sección crezca para ocupar el espacio disponible */
     display: flex;
+    flex-direction: column; /* Disposición vertical */
     justify-content: center;
     align-items: center; /* Centra el contenido */
     background-color: #252A2E; /* Fondo oscuro, para que el diseño sea consistente */
@@ -1000,5 +1001,9 @@ footer .arriba{
 .contenido-seccion {
     max-width: 800px;
     padding: 20px;
+}
+/* Justificar todos los textos del sitio */
+body {
+    text-align: justify;
 }
 

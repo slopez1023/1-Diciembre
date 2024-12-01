@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Letras de Canciones</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Work Sans', sans-serif;
+            margin: 0;
+            background-color: #1e2326;
+        }
+        .contenedor-header {
+            background-color: #333;
+            padding: 20px 0;
+        }
+        .logo a {
+            text-decoration: none;
+            font-family: 'Righteous', sans-serif;
+            font-size: 24px;
+            color: #fff;
+            margin-left: 20px;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Righteous', sans-serif;
+            margin-bottom: 20px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .imagen-letra {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .imagen-letra img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .imagen-letra h3 {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #444;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 20px;
+            }
+            .galeria {
+                grid-template-columns: 1fr; /* Mantener una sola columna */
+                gap: 15px; /* Reducir el espacio entre elementos */
+                padding: 0 10px; /* Más espacio en pantallas pequeñas */
+            }
+            .imagen-letra h3 {
+                font-size: 16px; /* Reducir tamaño del texto */
+            }
+            footer a {
+                font-size: 14px; /* Texto más pequeño en footer */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contenedor-header {
+                text-align: center;
+            }
+            .logo a {
+                font-size: 20px; /* Reducir el tamaño del logo */
+            }
+            h2 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            .imagen-letra img {
+                max-height: 300px; /* Evitar que las imágenes sean demasiado altas */
+                object-fit: cover;
+            }
+            .imagen-letra h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="index.html">Mi Amor ❤️</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección de Letras -->
+    <section class="galeria">
+        <h2>Letras de Canciones</h2>
+        <!-- Imagen 1 -->
+        <div class="imagen-letra">
+            <img src="images/1.jpg" alt="Letra 1">
+            <h3>Letra 1</h3>
+        </div>
+        <!-- Imagen 2 -->
+        <div class="imagen-letra">
+            <img src="images/2.jpg" alt="Letra 2">
+            <h3>Letra 2</h3>
+        </div>
+        <!-- Imagen 3 -->
+        <div class="imagen-letra">
+            <img src="images/3.jpg" alt="Letra 3">
+            <h3>Letra 3</h3>
+        </div>
+        <!-- Imagen 4 -->
+        <div class="imagen-letra">
+            <img src="images/4.jpg" alt="Letra 4">
+            <h3>Letra 4</h3>
+        </div>
+        <!-- Imagen 5 -->
+        <div class="imagen-letra">
+            <img src="images/5.jpg" alt="Letra 5">
+            <h3>Letra 5</h3>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="index.html" class="arriba">Volver</a>
+    </footer>
+</body>
+</html>
